@@ -1,0 +1,9 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+.venv/
+
+# Editor and OS files
+.vscode/
+.DS_Store
+
