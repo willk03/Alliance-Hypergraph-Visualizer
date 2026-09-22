@@ -8,7 +8,8 @@ def show_hypergraph(path):
     labels = {node: str(int(node.removeprefix("player-0"))) for node in H.nodes}
 
     fig, ax = plt.subplots(figsize=(12, 8))
-    pos = xgi.circular_layout(H)
+    #pos = xgi.circular_layout(H)
+    pos = xgi.barycenter_spring_layout(H, seed=42, k=0.3)
     xgi.draw(
         H,
         ax=ax,
@@ -21,7 +22,7 @@ def show_hypergraph(path):
 
     legend_items = [
         Line2D([], [], linestyle="none", label=f"{labels[node]}  {H.nodes[node]['name']}")
-        for node in sorted(H.nodes)
+        for node in sorted(H.nodes, key=lambda node: int(node.split("-")[-1]))
     ]
     ax.legend(
         handles=legend_items,
@@ -33,3 +34,5 @@ def show_hypergraph(path):
 
     fig.tight_layout()
     plt.show()
+    
+show_hypergraph("data/season_19/r1_alliances.json")
