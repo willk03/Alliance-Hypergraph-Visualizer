@@ -1,0 +1,64 @@
+{
+    "network-type": "undirected",
+    "metadata": {
+        "name": "Test Alliance Data"
+    },
+    "nodes": [
+        {
+            "node": "player-001",
+            "attrs": {
+                "name": "Will"
+            }
+        },
+        {
+            "node": "player-002",
+            "attrs": {
+                "name": "Zoe M"
+            }
+        },
+        {
+            "node": "player-003",
+            "attrs": {
+                "name": "Courtney"
+            }
+        }
+    ],
+    "edges": [
+        {
+            "edge": "alliance-001",
+            "attrs": {
+                "name": "FTC",
+                "created_round": 1
+            }
+        },
+        {
+            "edge": "alliance-002",
+            "attrs": {
+                "name": "Love Island Rob Fan Club",
+                "created_round": 2
+            }
+        }
+    ],
+    "incidences": [
+        {
+            "edge": "alliance-001",
+            "node": "player-001"
+        },
+        {
+            "edge": "alliance-001",
+            "node": "player-002"
+        },
+        {
+            "edge": "alliance-001",
+            "node": "player-003"
+        },
+        {
+            "edge": "alliance-002",
+            "node": "player-001"
+        },
+        {
+            "edge": "alliance-002",
+            "node": "player-002"
+        }
+    ]
+}
