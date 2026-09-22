@@ -26,8 +26,8 @@ def show_hypergraph(path):
     ax.legend(
         handles=legend_items,
         title="Players",
-        loc="center left",
-        bbox_to_anchor=(1.02, 0.5),
+        loc="upper right",
+        bbox_to_anchor=(0, 1),
         frameon=False,
     )
 
