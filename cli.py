@@ -1,4 +1,5 @@
 from alliance_data_editor import AllianceDataEditor
+import alliance_data_visualizer
 
 import os
 
@@ -13,8 +14,10 @@ def main():
         print("1. Add Alliance Chat")
         print("2. Remove Alliance Chat")
         print("3. List Alliance Chats")
-        print("4. Save and Exit")
-        print("5. Exit")
+        print("4. Show Graph")
+        print("5. Save")
+        print("6. Change Path")
+        print("7. Exit")
 
         choice = input("Choose an option: ").strip()
 
@@ -25,9 +28,12 @@ def main():
         elif choice == "3":
             list_alliances()
         elif choice == "4":
+            alliance_data_visualizer.show_hypergraph(data_path)
+        elif choice == "5":
             alliance_data_editor.save_data()
-            break
-        else:
+        elif choice == "6":
+            change_path()
+        elif choice == "7":
             break
             
 
@@ -54,6 +60,12 @@ def remove_alliance():
 def list_alliances():
     print()
     alliance_data_editor.list_alliance_chats()
+    
+def change_path():
+    new_path = input("Enter New Path: ")
+    data_path = new_path
+    alliance_data_editor = AllianceDataEditor(data_path)
+    alliance_data_editor.load_data()
     
 if __name__ == "__main__":
     main()
