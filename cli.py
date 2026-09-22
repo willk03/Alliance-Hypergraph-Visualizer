@@ -3,7 +3,7 @@ from alliance_data_editor import AllianceDataEditor
 import os
 
 
-data_path = "data/test.json"
+data_path = "data/season_19/r1_alliances.json"
 alliance_data_editor = AllianceDataEditor(data_path)
 alliance_data_editor.load_data()
 
@@ -13,7 +13,8 @@ def main():
         print("1. Add Alliance Chat")
         print("2. Remove Alliance Chat")
         print("3. List Alliance Chats")
-        print("4. Exit")
+        print("4. Save and Exit")
+        print("5. Exit")
 
         choice = input("Choose an option: ").strip()
 
@@ -24,6 +25,9 @@ def main():
         elif choice == "3":
             list_alliances()
         elif choice == "4":
+            alliance_data_editor.save_data()
+            break
+        else:
             break
             
 
