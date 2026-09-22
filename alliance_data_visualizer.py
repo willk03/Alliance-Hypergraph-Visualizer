@@ -34,5 +34,3 @@ def show_hypergraph(path):
 
     fig.tight_layout()
     plt.show()
-    
-show_hypergraph("data/season_19/r1_alliances.json")
