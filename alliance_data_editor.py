@@ -102,7 +102,7 @@ class AllianceDataEditor:
 
 
 if __name__ == "__main__":
-    editor = AllianceDataEditor("test.json")
+    editor = AllianceDataEditor("data/test.json")
     editor.load_data()
     editor.create_alliance_chat("test", 3, ["Will", "Zoe M"])
     editor.list_alliance_chats()
