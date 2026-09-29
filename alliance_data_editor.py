@@ -38,7 +38,9 @@ class AllianceDataEditor:
     def create_alliance_chat(self, name, round_created, players):
         if self.alliance_chat_exists(name):
             print("Alliance chat with that name already exists")
-            return
+            choice = input("Do you still want to create it? (y/n) ").lower().strip()
+            if choice != "y":
+                return
         for player in players:
             if self.get_player_id_from_name(player) == None:
                 print(f"Player {player} not found")
