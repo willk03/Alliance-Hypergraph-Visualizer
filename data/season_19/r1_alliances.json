@@ -253,6 +253,13 @@
                 "name": "syd-konoguppy",
                 "created_round": "1"
             }
+        },
+        {
+            "edge": "alliance-021",
+            "attrs": {
+                "name": "hugo-yoni",
+                "created_round": "1"
+            }
         }
     ],
     "incidences": [
@@ -434,6 +441,14 @@
         },
         {
             "edge": "alliance-020",
+            "node": "player-018"
+        },
+        {
+            "edge": "alliance-021",
+            "node": "player-008"
+        },
+        {
+            "edge": "alliance-021",
             "node": "player-018"
         }
     ]
