@@ -114,7 +114,7 @@ class AllianceDataEditor:
         removed_edges = [
             incidence["edge"]
             for incidence in self.data["incidences"]
-            if incidence["node"] == id and incidence["edge"] not in removed_edges
+            if incidence["node"] == id
         ]
         self.data["edges"] = [
             edge
@@ -133,5 +133,7 @@ if __name__ == "__main__":
     editor = AllianceDataEditor("data/test.json")
     editor.load_data()
     editor.create_alliance_chat("test", 3, ["Will", "Zoe M"])
+    editor.list_alliance_chats()
+    editor.remove_player("Courtney")
     editor.list_alliance_chats()
 
