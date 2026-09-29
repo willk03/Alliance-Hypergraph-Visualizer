@@ -13,11 +13,12 @@ def main():
         print("\nAlliance Chat Visualizer")
         print("1. Add Alliance Chat")
         print("2. Remove Alliance Chat")
-        print("3. List Alliance Chats")
-        print("4. Show Graph")
-        print("5. Save")
-        print("6. Change Path")
-        print("7. Exit")
+        print("3. Remove Player")
+        print("4. List Alliance Chats")
+        print("5. Show Graph")
+        print("6. Save")
+        print("7. Change Path")
+        print("8. Exit")
 
         choice = input("Choose an option: ").strip()
 
@@ -26,14 +27,16 @@ def main():
         elif choice == "2":
             remove_alliance()
         elif choice == "3":
-            list_alliances()
+            remove_player()
         elif choice == "4":
-            alliance_data_visualizer.show_hypergraph(data_path)
+            list_alliances()
         elif choice == "5":
-            alliance_data_editor.save_data()
+            alliance_data_visualizer.show_hypergraph(data_path)
         elif choice == "6":
-            change_path()
+            alliance_data_editor.save_data()
         elif choice == "7":
+            change_path()
+        elif choice == "8":
             break
             
 
@@ -56,6 +59,13 @@ def remove_alliance():
         return
     if input("Are you sure you want to delete? (y/n)").lower().strip() == "y":
         alliance_data_editor.remove_alliance_chat(name)
+        
+def remove_player():
+    name = input("Player Name: ").strip()
+    if name == None:
+        print("Fields can't be null")
+        return
+    alliance_data_editor.remove_player(name)
         
 def list_alliances():
     print()
