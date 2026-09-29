@@ -4,7 +4,7 @@ import alliance_data_visualizer
 import os
 
 
-data_path = "data/season_19/r1_alliances.json"
+data_path = "data/season_19/r2_alliances.json"
 alliance_data_editor = AllianceDataEditor(data_path)
 alliance_data_editor.load_data()
 
