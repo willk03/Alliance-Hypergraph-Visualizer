@@ -38,7 +38,9 @@ class AllianceDataEditor:
     def create_alliance_chat(self, name, round_created, players):
         if self.alliance_chat_exists(name):
             print("Alliance chat with that name already exists")
-            return
+            choice = input("Do you still want to create it? (y/n) ").lower().strip()
+            if choice != "y":
+                return
         for player in players:
             if self.get_player_id_from_name(player) == None:
                 print(f"Player {player} not found")
@@ -98,12 +100,40 @@ class AllianceDataEditor:
             for incidence in self.data["incidences"]
             if incidence["edge"] != id
         ]
-
+        
+    def remove_player(self, name):
+        choice = input(f"Are you sure you would like to delete {name}? (y/n) ").lower().strip()
+        if choice == "n": return
+        
+        id = self.get_player_id_from_name(name)
+        self.data["nodes"] = [
+            node
+            for node in self.data["nodes"]
+            if node["node"] != id
+        ]
+        removed_edges = [
+            incidence["edge"]
+            for incidence in self.data["incidences"]
+            if incidence["node"] == id
+        ]
+        self.data["edges"] = [
+            edge
+            for edge in self.data["edges"]
+            if edge["edge"] not in removed_edges
+        ]
+        self.data["incidences"] = [
+            incidence
+            for incidence in self.data["incidences"]
+            if incidence["edge"] not in removed_edges
+        ]
+                
 
 
 if __name__ == "__main__":
     editor = AllianceDataEditor("data/test.json")
     editor.load_data()
     editor.create_alliance_chat("test", 3, ["Will", "Zoe M"])
+    editor.list_alliance_chats()
+    editor.remove_player("Courtney")
     editor.list_alliance_chats()
 
