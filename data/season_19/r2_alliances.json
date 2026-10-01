@@ -7,103 +7,120 @@
         {
             "node": "player-001",
             "attrs": {
-                "name": "Aiden"
+                "name": "Aiden",
+                "tribe": "Black Mambas"
             }
         },
         {
             "node": "player-002",
             "attrs": {
-                "name": "Angelica"
+                "name": "Angelica",
+                "tribe": "Black Mambas"
             }
         },
         {
             "node": "player-003",
             "attrs": {
-                "name": "Anthony"
+                "name": "Anthony",
+                "tribe": "Platinum Pistols"
             }
         },
         {
             "node": "player-004",
             "attrs": {
-                "name": "Arjun"
+                "name": "Arjun",
+                "tribe": "Platinum Pistols"
             }
         },
         {
             "node": "player-005",
             "attrs": {
-                "name": "Cole"
+                "name": "Cole",
+                "tribe": "Platinum Pistols"
             }
         },
         {
             "node": "player-006",
             "attrs": {
-                "name": "Dylan"
+                "name": "Dylan",
+                "tribe": "Platinum Pistols"
             }
         },
         {
             "node": "player-007",
             "attrs": {
-                "name": "Ella"
+                "name": "Ella",
+                "tribe": "Black Mambas"
             }
         },
         {
             "node": "player-008",
             "attrs": {
-                "name": "Hugo"
+                "name": "Hugo",
+                "tribe": "Black Mambas"
             }
         },
         {
             "node": "player-009",
             "attrs": {
-                "name": "Izzy"
+                "name": "Izzy",
+                "tribe": "Platinum Pistols"
             }
         },
         {
             "node": "player-010",
             "attrs": {
-                "name": "Karolina"
+                "name": "Karolina",
+                "tribe": "Black Mambas"
             }
         },
         {
             "node": "player-011",
             "attrs": {
-                "name": "Mara"
+                "name": "Mara",
+                "tribe": "Black Mambas"
             }
         },
         {
             "node": "player-012",
             "attrs": {
-                "name": "Oliver"
+                "name": "Oliver",
+                "tribe": "Black Mambas"
             }
         },
         {
             "node": "player-013",
             "attrs": {
-                "name": "Paylyn"
+                "name": "Paylyn",
+                "tribe": "Platinum Pistols"
             }
         },
         {
             "node": "player-0015",
             "attrs": {
-                "name": "Sarah"
+                "name": "Sarah",
+                "tribe": "Platinum Pistols"
             }
         },
         {
             "node": "player-016",
             "attrs": {
-                "name": "Shrihan"
+                "name": "Shrihan",
+                "tribe": "Platinum Pistols"
             }
         },
         {
             "node": "player-017",
             "attrs": {
-                "name": "Sydney"
+                "name": "Sydney",
+                "tribe": "Black Mambas"
             }
         },
         {
             "node": "player-018",
             "attrs": {
-                "name": "Yoni"
+                "name": "Yoni",
+                "tribe": "Black Mambas"
             }
         }
     ],
