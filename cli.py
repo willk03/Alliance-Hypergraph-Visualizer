@@ -3,8 +3,7 @@ import alliance_data_visualizer
 
 import os
 
-
-data_path = "data/season_19/r2_alliances.json"
+data_path = "sample_data/sample_alliances.json"
 alliance_data_editor = AllianceDataEditor(data_path)
 alliance_data_editor.load_data()
 
@@ -73,6 +72,10 @@ def list_alliances():
     
 def change_path():
     new_path = input("Enter New Path: ")
+    
+    global data_path
+    global alliance_data_editor
+    
     data_path = new_path
     alliance_data_editor = AllianceDataEditor(data_path)
     alliance_data_editor.load_data()
