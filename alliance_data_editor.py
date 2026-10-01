@@ -20,6 +20,7 @@ class AllianceDataEditor:
             f"{edge["attrs"]["name"]}: {", ".join(self.players_in_alliance(edge["edge"]))}"
             for edge in self.data["edges"]
         }
+        alliance_chats = sorted(alliance_chats)
         print("\n".join(alliance_chats))
 
     def players_in_alliance(self, alliance_id):
