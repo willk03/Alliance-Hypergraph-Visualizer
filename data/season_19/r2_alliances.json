@@ -313,6 +313,48 @@
                 "name": "paylyn-sarah-nishikawa-arjun-hehim-anthony-obrien-cole-humeston07",
                 "created_round": "2"
             }
+        },
+        {
+            "edge": "alliance-030",
+            "attrs": {
+                "name": "ella",
+                "created_round": "2"
+            }
+        },
+        {
+            "edge": "alliance-031",
+            "attrs": {
+                "name": "cole_humeston07",
+                "created_round": "2"
+            }
+        },
+        {
+            "edge": "alliance-032",
+            "attrs": {
+                "name": "angelica-sheher-smokin",
+                "created_round": "2"
+            }
+        },
+        {
+            "edge": "alliance-033",
+            "attrs": {
+                "name": "dylanhafke",
+                "created_round": "2"
+            }
+        },
+        {
+            "edge": "alliance-034",
+            "attrs": {
+                "name": "syd",
+                "created_round": "2"
+            }
+        },
+        {
+            "edge": "alliance-035",
+            "attrs": {
+                "name": "aiden-hugo-oliver-mara-karolina-yoni",
+                "created_round": "2"
+            }
         }
     ],
     "incidences": [
@@ -579,6 +621,70 @@
         {
             "edge": "alliance-029",
             "node": "player-003"
+        },
+        {
+            "edge": "alliance-030",
+            "node": "player-007"
+        },
+        {
+            "edge": "alliance-030",
+            "node": "player-001"
+        },
+        {
+            "edge": "alliance-031",
+            "node": "player-005"
+        },
+        {
+            "edge": "alliance-031",
+            "node": "player-003"
+        },
+        {
+            "edge": "alliance-032",
+            "node": "player-008"
+        },
+        {
+            "edge": "alliance-032",
+            "node": "player-002"
+        },
+        {
+            "edge": "alliance-033",
+            "node": "player-009"
+        },
+        {
+            "edge": "alliance-033",
+            "node": "player-006"
+        },
+        {
+            "edge": "alliance-034",
+            "node": "player-010"
+        },
+        {
+            "edge": "alliance-034",
+            "node": "player-017"
+        },
+        {
+            "edge": "alliance-035",
+            "node": "player-001"
+        },
+        {
+            "edge": "alliance-035",
+            "node": "player-008"
+        },
+        {
+            "edge": "alliance-035",
+            "node": "player-012"
+        },
+        {
+            "edge": "alliance-035",
+            "node": "player-011"
+        },
+        {
+            "edge": "alliance-035",
+            "node": "player-010"
+        },
+        {
+            "edge": "alliance-035",
+            "node": "player-018"
         }
     ]
 }
