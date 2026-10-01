@@ -7,3 +7,6 @@ __pycache__/
 .vscode/
 .DS_Store
 
+# Real Data That Should Not Be Public
+data/
+figures/
