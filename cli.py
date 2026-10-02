@@ -7,6 +7,9 @@ data_path = "sample_data/sample_alliances.json"
 alliance_data_editor = AllianceDataEditor(data_path)
 alliance_data_editor.load_data()
 
+seed = 41
+k = 0.35
+
 def main():
     while True:
         print("\nAlliance Chat Visualizer")
@@ -15,9 +18,10 @@ def main():
         print("3. Remove Player")
         print("4. List Alliance Chats")
         print("5. Show Graph")
-        print("6. Save")
-        print("7. Change Path")
-        print("8. Exit")
+        print("6. Change Graph Seed")
+        print("7. Save")
+        print("8. Change Path")
+        print("9. Exit")
 
         choice = input("Choose an option: ").strip()
 
@@ -30,12 +34,14 @@ def main():
         elif choice == "4":
             list_alliances()
         elif choice == "5":
-            alliance_data_visualizer.show_hypergraph(data_path)
+            alliance_data_visualizer.show_hypergraph(data_path, seed, k)
         elif choice == "6":
-            alliance_data_editor.save_data()
+            change_seed()
         elif choice == "7":
-            change_path()
+            alliance_data_editor.save_data()
         elif choice == "8":
+            change_path()
+        elif choice == "9":
             break
             
 
@@ -69,6 +75,15 @@ def remove_player():
 def list_alliances():
     print()
     alliance_data_editor.list_alliance_chats()
+    
+def change_seed():
+    new_seed = int(input("New Seed: "))
+    new_k = float(input("New K: "))
+    
+    global seed, k
+    
+    seed = new_seed
+    k = new_k
     
 def change_path():
     new_path = input("Enter New Path: ")

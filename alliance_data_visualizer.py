@@ -2,14 +2,14 @@ import matplotlib.pyplot as plt
 from matplotlib.lines import Line2D
 import xgi
 
-def show_hypergraph(path):
+def show_hypergraph(path, seed, k):
     H = xgi.read_hif(path)
 
     labels = {node: str(int(node.removeprefix("player-0"))) for node in H.nodes}
 
     fig, ax = plt.subplots(figsize=(12, 8))
     #pos = xgi.circular_layout(H)
-    pos = xgi.barycenter_spring_layout(H, seed=41, k=0.35)
+    pos = xgi.barycenter_spring_layout(H, seed = seed, k = k)
     xgi.draw(
         H,
         ax=ax,
