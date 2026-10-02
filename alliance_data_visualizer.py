@@ -9,7 +9,7 @@ def show_hypergraph(path, seed, k):
 
     fig, ax = plt.subplots(figsize=(12, 8))
     #pos = xgi.circular_layout(H)
-    pos = xgi.barycenter_spring_layout(H, seed, k)
+    pos = xgi.barycenter_spring_layout(H, seed = seed, k = k)
     xgi.draw(
         H,
         ax=ax,

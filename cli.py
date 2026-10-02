@@ -77,8 +77,8 @@ def list_alliances():
     alliance_data_editor.list_alliance_chats()
     
 def change_seed():
-    new_seed = input("New Seed: ")
-    new_k = input("New K: ")
+    new_seed = int(input("New Seed: "))
+    new_k = float(input("New K: "))
     
     global seed, k
     
