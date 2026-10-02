@@ -1,7 +1,7 @@
 {
     "network-type": "undirected",
     "metadata": {
-        "name": "Test Alliance Data"
+        "name": "Sample Alliance Data"
     },
     "nodes": [
         {
